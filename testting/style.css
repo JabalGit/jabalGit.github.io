@@ -1,0 +1,739 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  background-color: #ffffff;
+  height: 100vh;
+  
+    font-family: "Ubuntu", serif;
+    font-weight: 100%;
+    font-style: normal;
+  }
+
+  .marquee {
+    width: 100%; /* Atur lebar sesuai kebutuhan */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: #dfff28;
+    color: #000000;
+    padding: 1px;
+    
+}
+
+/* Mengatur animasi teks bergerak */
+.marquee p {
+    display: inline-block;
+    font-size: 17px;
+    animation: scrollText 10s linear infinite;
+}
+
+/* Efek animasi untuk teks bergerak dari kiri ke kanan */
+@keyframes scrollText {
+  0% {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+}
+  100% {
+      transform: translateX(800%);
+      -webkit-transform: translateX(800%);
+      -moz-transform: translateX(800%);
+      -ms-transform: translateX(800%);
+      -o-transform: translateX(800%);
+}
+
+200% {
+  transform: translateX(-90%);
+  -webkit-transform: translateX(-90%);
+  -moz-transform: translateX(-90%);
+  -ms-transform: translateX(-90%);
+  -o-transform: translateX(-90%);
+}
+
+
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+
+.navbar i {
+  display: none;
+}
+
+
+.btn-logo {
+font-size: 24px;
+color: #000000;
+font-weight: bold;
+--backgound-color: #ff963f;
+--backgound-color-dark: #000000;
+  display: inline-block;
+  margin: 0 8px;
+  padding: 8px 8px;
+  
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  background-color:var(--backgound-color);
+  box-shadow: 2px 2px 0 var(--backgound-color-dark);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn-logo a {
+text-decoration: none;
+color: #000000;
+
+}
+
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+
+    
+    
+    
+}
+
+
+
+.navbar-links a {
+    text-decoration: none;
+    font-size: large;
+    color: #000000;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+  
+
+  
+}
+
+
+
+.btn1 {
+  --backgound-color: #00c3ff;
+  --backgound-color-dark: #000000;
+  
+  display: flex;
+  align-items: center;
+  margin: 0 0px;
+  
+  font-family: cursive;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #000000;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--backgound-color);
+  box-shadow: 4px 4px 0 var(--backgound-color-dark);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn1 a {
+  
+  padding: 10px 10px;
+  
+}
+
+
+.btn3 {
+  --backgound-color: #bb47ff;
+  --backgound-color-dark: #000000;
+  display: flex;
+  align-items: center;
+ 
+  font-family: cursive;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  border:1px solid #000000;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--backgound-color);
+  box-shadow: 4px 4px 0 var(--backgound-color-dark);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn3 a {
+ 
+  padding: 10px 10px;
+  
+}
+
+.btn4 {
+  --backgound-color: #00ff22;
+  --backgound-color-dark: #020202;
+  display: flex;
+  align-items: center;
+  
+  font-family: cursive;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #000000;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--backgound-color);
+  box-shadow: 4px 4px 0 var(--backgound-color-dark);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn4 a {
+  
+  padding: 10px 10px;
+  
+}
+
+.btn5 {
+  --backgound-color: #ff0000;
+  --backgound-color-dark: #000000;
+  
+  display: flex;
+  align-items: center;
+  
+  font-family: cursive;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #000000;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--backgound-color);
+  box-shadow: 4px 4px 0 var(--backgound-color-dark);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn5 a {
+  
+  padding: 10px 10px;
+  
+}
+
+.btn1:active {
+  transform: translateX(2px) translateY(2px);
+  -webkit-transform: translateX(2px) translateY(2px);
+  -moz-transform: translateX(2px) translateY(2px);
+  -ms-transform: translateX(2px) translateY(2px);
+  -o-transform: translateX(2px) translateY(2px);
+  box-shadow: 2px 2px var(--backgound-color-dark);
+}
+
+
+
+.btn3:active {
+  transform: translateX(2px) translateY(2px);
+  -webkit-transform: translateX(2px) translateY(2px);
+  -moz-transform: translateX(2px) translateY(2px);
+  -ms-transform: translateX(2px) translateY(2px);
+  -o-transform: translateX(2px) translateY(2px);
+  box-shadow: 2px 2px var(--backgound-color-dark);
+}
+.btn4:active {
+  transform: translateX(2px) translateY(2px);
+  -webkit-transform: translateX(2px) translateY(2px);
+  -moz-transform: translateX(2px) translateY(2px);
+  -ms-transform: translateX(2px) translateY(2px);
+  -o-transform: translateX(2px) translateY(2px);
+  box-shadow: 2px 2px var(--backgound-color-dark);
+}
+
+.btn5:active {
+  transform: translateX(2px) translateY(2px);
+  -webkit-transform: translateX(2px) translateY(2px);
+  -moz-transform: translateX(2px) translateY(2px);
+  -ms-transform: translateX(2px) translateY(2px);
+  -o-transform: translateX(2px) translateY(2px);
+  box-shadow: 2px 2px var(--backgound-color-dark);
+}
+
+
+
+
+
+
+
+.hero {
+  
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 650px;
+  
+}
+
+
+.hero-content { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  
+  width: 1000px;
+  height: 350px;
+}
+
+.fab {
+  font-size: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.fa-brands {
+  font-size: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+
+
+
+.nama {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.nama h1 {
+  margin-bottom: 20px
+}
+
+.text h1 {
+  margin-top: 10px;
+  font-size: 2rem;
+  border-right: 3px solid black;
+  /*Titikkursorsepertisedangmengetik*/width: 0;
+  /*Dimulaidarilebar0*/white-space: nowrap;
+  /*Menjagaagartekstetappadasatubaris*/overflow: hidden;
+  /*Menyembunyikanteksyangbelumditampilkan*/animation: typing 2s steps(30) 0.9s forwards, blink 1s step-end infinite;
+  
+}
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 26%;
+      border-color: #f2e0ff;
+
+      }
+      
+
+    }
+   
+      
+    
+  
+  @keyframes blink {
+
+    60% {
+      border-color: #000000;
+    }
+      
+    
+    
+  }
+  
+
+  
+  
+
+
+.text {
+  max-width: 100%;
+  --backgound-color: #f2e0ff;
+  --backgound-color-dark: #000000;
+  display: inline-block;
+ 
+  padding: 70px 16px;
+  
+  font-size: 100px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--backgound-color);
+  box-shadow: 10px 10px  var(--backgound-color-dark);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: au;
+  
+  
+ 
+}
+
+
+
+
+.text span {
+color: #a474ff;
+
+stroke: 5px ;
+
+}
+
+
+
+.text h1 {
+  font-size: 25px;
+  color: #333;
+  margin-top: -40px;
+  
+}
+
+.text p {
+  font-size: 18px;
+  color: #000000;
+  line-height: 25px;
+  border-bottom: 2px solid black; 
+ 
+  margin-bottom: -40px;
+  
+}
+.btn-seleng a {
+    text-decoration: none;
+    
+    font-size: 20px;
+    color: #000000;
+    font-family: "Ubuntu", serif;
+    
+    justify-items: center;
+    padding: 40px 40px;
+    
+   
+}
+
+
+.btn-seleng {
+  --backgound-color: #8482ff;
+  --backgound-color-dark: #000000;
+  
+  font-family: cursive;
+  font-size: 10px;
+  
+  text-decoration: none;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--backgound-color);
+  box-shadow: 7px 7px #000000;
+  border-radius: 5px ;
+  margin-left: 15px;
+  margin-top: 200px;
+  -webkit-border-radius: 5px ;
+  -moz-border-radius: 5px ;
+  -ms-border-radius: 5px ;
+  -o-border-radius: 5px ;
+  height: 90px;
+  justify-items: center;
+
+  
+}
+
+.btn-seleng:active {
+  transform: translateX(3px) translateY(3px);
+  -webkit-transform: translateX(3px) translateY(3px);
+  -moz-transform: translateX(3px) translateY(3px);
+  -ms-transform: translateX(3px) translateY(3px);
+  -o-transform: translateX(3px) translateY(3px);
+  box-shadow: 4px 4px var(--backgound-color-dark);
+}
+
+
+
+
+.image-container {
+  display: flex;
+  margin-left: -400px;
+  margin-bottom: 20px;
+}
+
+
+.image-container img {
+  background-color: #000000;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  --backgound-color: #8400ff;
+  --backgound-color-dark: #000000;
+  display: inline-block;
+ 
+ 
+  padding: 3px 3px;
+  font-family: cursive;
+  font-size: 0px;
+  color: #ffffff;
+  text-decoration: none;
+
+  outline: none;
+  cursor: pointer;
+  background-color: var(--backgound-color);
+  box-shadow: 3px 3px 0 var(--backgound-color-dark);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+  
+
+
+.footer {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  justify-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 161cap;
+  margin-left: 34px;
+  border: 1px solid rgb(44, 44, 44);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 140px ;
+}
+
+
+.biografi{
+  text-align: center;
+  background-color: #6b0000;
+  font-size: 12px;
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 600px) {
+
+}
+
+
+@media (max-width: 600px) {
+body {
+  justify-content: center;
+  align-items: center;
+}
+
+
+  .navbar{
+  justify-content: space-between;
+}
+
+.navbar-links{
+  display: flex;
+  gap: 6px;
+}
+.navbar-links a {
+  font-size: 7px;
+ 
+  
+  padding-left: 5px;
+  position: relative;
+  left: 2px;
+  
+}
+
+
+
+
+.navbar i{
+display: block;
+justify-content: space-between;
+margin-right: 0px;
+}
+
+.image-container {
+  justify-content: center;
+  align-content: center;
+  width: 370px;
+  height: 200px;
+  position: relative;
+  left: 220px;
+ 
+  
+}
+
+.image-container img {
+ 
+ 
+  position: relative;
+  top: 20px;
+  width: 130px;
+  height: 130px;
+ 
+  
+}
+
+.btn-logo {
+  width: 120px;
+  height: 39px;
+  text-align: center;
+}
+.portfolio {
+  font-size: 20px;
+  position: relative;
+  bottom: 5px;
+  right: 2px;
+}
+
+.nama {
+  font-size: 15px;
+  
+  width: 200px;
+  position: relative;
+  height: fit-content;
+  top: 13px;
+  
+  
+}
+
+.fab {
+  font-size: 23px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.fa-brands {
+  font-size: 23px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.hero {
+ 
+  width: 390px;
+  justify-items: center;
+  align-content: center;
+
+}
+.hero-content { 
+  position: relative;
+  left: 80px;
+  
+  
+}
+.btn-seleng {
+  position: relative;
+  top: 220px;
+  width: 150px;
+  height: 60px;
+  right: 150px;
+}
+.btn-seleng a {
+  position: relative;
+  font-size: 17px;
+  left: -15px;
+}
+
+.footer {
+  position: relative;
+  width: 300px;
+  top: -10px;
+  left: 15px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    border-color: #f2e0ff;
+
+    }
+  }
+
+@keyframes blink {
+
+  60% {
+    border-color: #000000;
+  } 
+}
+}
